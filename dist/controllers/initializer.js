@@ -492,7 +492,7 @@ exports.create = create;
  * Checs for a new versoin of venom and logs
  */
 function checkVenomVersion(spinnies) {
-    latest_version_1.default('api_whatsapp').then(function (latest) {
+    latest_version_1.default('venom-bot').then(function (latest) {
         if (!semver_1.upToDate(version, latest)) {
             logUpdateAvailable(version, latest);
         }
@@ -508,7 +508,7 @@ function logUpdateAvailable(current, latest) {
     // prettier-ignore
     var newVersionLog = "There is a new version of " + chalk.bold("Venom") + " " + chalk.gray(current) + " \u279C  " + chalk.bold.green(latest) + "\n" +
         "Update your package by running:\n\n" +
-        (chalk.bold('\>') + " " + chalk.blueBright('npm update api_whatsapp'));
+        (chalk.bold('\>') + " " + chalk.blueBright('npm update venom-bot'));
     console.log(boxen(newVersionLog, { padding: 1 }));
-    console.log("For more info visit: " + chalk.underline('https://github.com/TalalMohamedElmenoufi/api_whatsapp/Update.md') + "\n");
+    console.log("For more info visit: " + chalk.underline('https://github.com/orkestral/venom/blob/master/Update.md') + "\n");
 }

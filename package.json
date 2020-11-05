@@ -1,16 +1,16 @@
 {
-  "_from": "api_whatsapp",
-  "_id": "api_whatsapp@2.0.18",
+  "_from": "venom-bot",
+  "_id": "venom-bot@2.0.18",
   "_inBundle": false,
   "_integrity": "sha512-/fOnHcu9795VY1oo6rjlUD3jTe8UFkxKdmuwpnW8aS8R6mTzT4P0yCq3kwkYmYUEjM3+kIvM3JkfUzKqz5Almg==",
-  "_location": "/api_whatsapp",
+  "_location": "/venom-bot",
   "_phantomChildren": {},
   "_requested": {
     "type": "tag",
     "registry": true,
-    "raw": "api_whatsapp",
-    "name": "api_whatsapp",
-    "escapedName": "api_whatsapp",
+    "raw": "venom-bot",
+    "name": "venom-bot",
+    "escapedName": "venom-bot",
     "rawSpec": "",
     "saveSpec": null,
     "fetchSpec": "latest"
@@ -19,8 +19,15 @@
     "#USER",
     "/"
   ],
+  "_resolved": "https://registry.npmjs.org/venom-bot/-/venom-bot-2.0.18.tgz",
+  "_shasum": "1bf5752bacd9a7dc631e7ec404d4b29daacb322c",
+  "_spec": "venom-bot",
+  "_where": "C:\\Users\\talal\\Documents\\curso_nodejs\\api_whatsapp_tme_v3",
+  "author": {
+    "name": "Orkestral"
+  },
   "bugs": {
-    "url": "https://github.com/TalalMohamedElmenoufi/api_whatsapp/issues"
+    "url": "https://github.com/orkestral/venom/issues"
   },
   "bundleDependencies": false,
   "config": {
@@ -47,7 +54,7 @@
     "tree-kill": "^1.2.2"
   },
   "deprecated": false,
-  "description": "api_whatsapp is a high-performance system developed with JavaScript to create a bot for WhatsApp, support for creating any interaction, such as customer service, media sending, sentence recognition based on artificial intelligence and all types of design architecture for WhatsApp. ",
+  "description": "Venom is a high-performance system developed with JavaScript to create a bot for WhatsApp, support for creating any interaction, such as customer service, media sending, sentence recognition based on artificial intelligence and all types of design architecture for WhatsApp. ",
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-angular": "^11.0.0",
@@ -79,7 +86,7 @@
     "webpack": "^4.44.2",
     "webpack-cli": "^4.1.0"
   },
-  "homepage": "https://github.com/TalalMohamedElmenoufi/api_whatsapp#readme",
+  "homepage": "https://github.com/orkestral/venom#readme",
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
@@ -98,21 +105,21 @@
   ],
   "license": "MIT",
   "main": "dist/index.js",
-  "name": "api_whatsapp",
+  "name": "venom-bot",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TalalMohamedElmenoufi/api_whatsapp.git"
+    "url": "git+https://github.com/orkestral/venom.git"
   },
   "scripts": {
-    "build": "npm run build:wapi && npm run build:middleware && npm run build:jsQR && npm run build:counter && npm run build:api_whatsapp",
+    "build": "npm run build:wapi && npm run build:middleware && npm run build:jsQR && npm run build:counter && npm run build:venom",
     "build:counter": "cd src/lib/counter/ && gulp",
     "build:docs": "typedoc && git add docs/*",
     "build:jsQR": "cd src/lib/jsQR/ && gulp",
     "build:middleware": "cd src/lib/middleware/ && webpack",
-    "build:api_whatsapp": "tsc",
+    "build:venom": "tsc",
     "build:wapi": "cd src/lib/wapi/ && webpack",
     "changelog:last": "conventional-changelog -p angular -r 2",
     "changelog:preview": "conventional-changelog -p angular -u",
@@ -122,7 +129,7 @@
     "lint": "npx eslint -c .eslintrc.js --ext .ts src",
     "prepublish": "npm run clean && npm run build",
     "release": "release-it",
-    "start": "npm run build:api_whatsapp & tsc app.ts && node app.js",
+    "start": "npm run build:venom & tsc app.ts && node app.js",
     "test": "echo \"No tests yet\"",
     "watch": "concurrently \"tsc -w\" \"nodemon dist/index.js\""
   },
