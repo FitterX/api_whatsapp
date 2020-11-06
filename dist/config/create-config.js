@@ -10,7 +10,10 @@ exports.defaultOptions = {
     debug: false,
     logQR: true,
     browserWS: '',
-    browserArgs: [''],
+    browserArgs: [
+        '--no-sandbox',
+        '--disable-setuid-sandbox',	
+      ],
     puppeteerOptions: {},
     disableSpins: false,
     disableWelcome: false,
